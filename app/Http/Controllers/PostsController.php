@@ -8,7 +8,7 @@ use Intervention\Image\Facades\Image;
 
 class PostsController extends Controller
 {
-    public function _construct()
+    public function __construct()
     {
         $this->middleware('auth');
     }
