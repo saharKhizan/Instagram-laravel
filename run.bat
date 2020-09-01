@@ -5,10 +5,13 @@ call npm install && (
        echo Composer installed
 	   call php artisan storage:link && (
 		echo storage link created.
+		cd database\
+		copy nul database.sqlite
+		cd ..\
 		call php artisan migrate && (
 			(
 			echo *****************************************
-			echo *               ヽ(•‿•)ノ                 *
+			echo *                 ((:                   *
 			echo *                                       *
 			echo *            congratulation             *
 			echo *                                       *
